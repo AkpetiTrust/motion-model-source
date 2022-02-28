@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./index.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Intro from "./Pages/Intro/Intro";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router >
+      <Routes>
+        <Route path='/' exact element={<Intro />} />
+      </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

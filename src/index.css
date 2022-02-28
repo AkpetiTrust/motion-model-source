@@ -1,13 +1,102 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shizuru&display=swap");
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Poppins", sans-serif;
+  color: #181818;
 }
+
+.intro {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.intro main {
+  background-image: url("./images/hideout.svg");
+  padding: 40px 50px;
+}
+
+.intro .title {
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  margin-top: 55px;
+  max-width: 450px;
+}
+
+.intro .talk {
+  color: rgba(24, 24, 24, 0.43);
+  max-width: 370px;
+  margin-bottom: 25px;
+}
+
+.intro .btn_group {
+  max-width: 350px;
+}
+
+.intro .btn {
+  outline: none;
+  border: none;
+  background-color: unset;
+  padding: 7px 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  font-family: inherit;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.8em;
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+}
+
+.intro .btn_secondary {
+  background-color: #247ba0;
+  color: #fff;
+  margin-right: 25px;
+}
+
+.intro .btn_plain {
+  border: 1px solid #181818;
+}
+
+.intro aside {
+  font-family: "Shizuru", cursive;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 30px;
+}
+
+.intro aside .aside_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90%;
+}
+
+.intro aside .chart {
+  width: 300px;
+}
+
+.intro aside .analysis {
+  height: 250px;
+}
+/*# sourceMappingURL=index.css.map */

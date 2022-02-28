@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@700&display=swap");
+.logo {
+  font-family: "Andada Pro", serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  width: 60%;
+  height: 8px;
+  background-color: rgba(226, 132, 19, 0.48);
+  border-radius: 15px;
+}
+/*# sourceMappingURL=index.module.css.map */
