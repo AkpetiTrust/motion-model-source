@@ -6,6 +6,10 @@
   font-size: 1.2em;
   position: relative;
   width: fit-content;
+  a {
+    all: unset;
+    cursor: pointer;
+  }
 
   &::after {
     content: "";

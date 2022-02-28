@@ -9,6 +9,11 @@
   width: fit-content;
 }
 
+.logo a {
+  all: unset;
+  cursor: pointer;
+}
+
 .logo::after {
   content: "";
   position: absolute;

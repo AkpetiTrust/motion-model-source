@@ -116,7 +116,7 @@ function Intro() {
                   </g>
                 </g>
                 <circle
-                  id="Ellipse 1"
+                  id="Ellipse-1"
                   cx="103.86"
                   cy="41.9169"
                   r="11.8495"
@@ -124,7 +124,7 @@ function Intro() {
                   fillOpacity="0.6"
                 />
                 <circle
-                  id="Ellipse 2"
+                  id="Ellipse-2"
                   cx="200.878"
                   cy="89.315"
                   r="11.8495"
@@ -132,7 +132,7 @@ function Intro() {
                   fillOpacity="0.6"
                 />
                 <circle
-                  id="Ellipse 3"
+                  id="Ellipse-3"
                   cx="368.252"
                   cy="30.0674"
                   r="11.8495"

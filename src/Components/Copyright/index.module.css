@@ -11,4 +11,14 @@
   text-decoration: none;
   color: #3562b9;
 }
+
+@media screen and (max-width: 910px) {
+  .copyright {
+    position: static;
+    padding: 40px 0;
+    text-align: center;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 /*# sourceMappingURL=index.module.css.map */
