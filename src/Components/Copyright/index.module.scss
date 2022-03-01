@@ -8,6 +8,12 @@
     text-decoration: none;
     color: #3562b9;
   }
+  &.longpage {
+    position: static;
+    padding: 40px 0;
+    text-align: center;
+    transform: none;
+  }
 }
 
 @media screen and(max-width:910px) {

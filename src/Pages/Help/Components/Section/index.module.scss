@@ -1,0 +1,48 @@
+.section {
+  display: grid;
+  grid-template-columns: minmax(auto, 500px) 1fr;
+  grid-column-gap: 30px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #18181831;
+
+  &.reverse {
+    .talk {
+      order: 2;
+      max-width: 75%;
+      justify-self: end;
+    }
+  }
+
+  .talk {
+    h4 {
+      font-size: 1.4em;
+      width: fit-content;
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 12px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 5px;
+        background-color: #247ba0;
+      }
+    }
+    p {
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+  }
+
+  .image_container {
+    text-align: center;
+
+    svg {
+      height: 80%;
+    }
+  }
+}

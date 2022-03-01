@@ -12,6 +12,14 @@
   color: #3562b9;
 }
 
+.copyright.longpage {
+  position: static;
+  padding: 40px 0;
+  text-align: center;
+  -webkit-transform: none;
+          transform: none;
+}
+
 @media screen and (max-width: 910px) {
   .copyright {
     position: static;

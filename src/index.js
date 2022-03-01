@@ -4,12 +4,14 @@ import reportWebVitals from './reportWebVitals';
 import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Intro from "./Pages/Intro/Intro";
+import Help from './Pages/Help/Help';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router >
       <Routes>
         <Route path='/' exact element={<Intro />} />
+        <Route path='/help' exact element={<Help />} />
       </Routes>
     </Router>
   </React.StrictMode>,

@@ -9,6 +9,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: #181818;
@@ -271,5 +275,79 @@ body {
   .intro aside .image-group svg {
     width: 100%;
   }
+}
+
+.help {
+  padding: 40px 50px;
+}
+
+.help .top .title-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+}
+
+.help .top .title-grid h1 {
+  font-size: 2.1em;
+  font-weight: 600;
+  max-width: 500px;
+}
+
+.help .top .title-grid .image-container {
+  text-align: center;
+}
+
+.help .top .title-grid .image-container svg {
+  height: 80%;
+}
+
+.help .contents {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr minmax(auto, 700px);
+      grid-template-columns: 1fr minmax(auto, 700px);
+  margin-top: 10px;
+  grid-column-gap: 30px;
+  margin-bottom: 20px;
+}
+
+.help .contents .talk {
+  padding-top: 30px;
+  font-size: 1.2em;
+}
+
+.help .contents .talk P {
+  margin-bottom: 20px;
+}
+
+.help .contents .talk ul li {
+  margin-bottom: 10px;
+}
+
+.help .contents .talk ul li a {
+  color: #407bff;
+  text-decoration: none;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.help .contents .talk ul li a:hover {
+  color: #0000ee;
+}
+
+.help .closure {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.help .closure p {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.help .closure svg {
+  max-width: 100%;
 }
 /*# sourceMappingURL=index.css.map */

@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: $dark-color;
@@ -19,3 +23,6 @@ body {
 
 // Intro Page
 @import "./Styles/intro";
+
+// Help Page
+@import "./Styles/help";
