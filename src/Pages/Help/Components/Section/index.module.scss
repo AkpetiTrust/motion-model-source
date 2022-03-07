@@ -43,6 +43,60 @@
 
     svg {
       height: 80%;
+      :global(#Wheel-1),
+      :global(#Wheel-2) {
+        animation: rotate 3s linear infinite forwards;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
     }
+  }
+}
+
+@media screen and(max-width:900px) {
+  .section {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    padding-bottom: 40px;
+
+    .image_container {
+      svg {
+        height: unset;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:650px) {
+  .section {
+    display: block;
+    &.reverse .talk {
+      max-width: 100%;
+    }
+
+    .talk {
+      max-width: 100%;
+      h4 {
+        font-size: 1em;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 0.9em;
+      }
+    }
+
+    .image_container {
+      margin-top: 60px;
+      svg {
+        height: unset;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
   }
 }

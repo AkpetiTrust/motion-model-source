@@ -50,4 +50,65 @@
 .section .image_container svg {
   height: 80%;
 }
+
+.section .image_container svg :global(#Wheel-1),
+.section .image_container svg :global(#Wheel-2) {
+  -webkit-animation: rotate 3s linear infinite forwards;
+          animation: rotate 3s linear infinite forwards;
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@media screen and (max-width: 900px) {
+  .section {
+    -ms-grid-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    padding-bottom: 40px;
+  }
+  .section .image_container svg {
+    height: unset;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section {
+    display: block;
+  }
+  .section.reverse .talk {
+    max-width: 100%;
+  }
+  .section .talk {
+    max-width: 100%;
+  }
+  .section .talk h4 {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .section .talk p {
+    font-size: 0.9em;
+  }
+  .section .image_container {
+    margin-top: 60px;
+  }
+  .section .image_container svg {
+    height: unset;
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 /*# sourceMappingURL=index.module.css.map */

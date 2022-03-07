@@ -187,6 +187,10 @@
 
 @media screen and(max-width:580px) {
   .intro {
+    .title {
+      font-size: 1.4em;
+      margin-bottom: 15px;
+    }
     main {
       padding: 40px 20px;
     }

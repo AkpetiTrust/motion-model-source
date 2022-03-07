@@ -264,6 +264,10 @@ body {
 }
 
 @media screen and (max-width: 580px) {
+  .intro .title {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+  }
   .intro main {
     padding: 40px 20px;
   }
@@ -279,6 +283,40 @@ body {
 
 .help {
   padding: 40px 50px;
+}
+
+.help .shapes .squares div {
+  position: absolute;
+}
+
+.help .shapes .squares div.square-1 {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(36, 123, 160, 0.57);
+  -webkit-transform: rotate(53.48deg);
+          transform: rotate(53.48deg);
+  top: 50px;
+  left: 50%;
+}
+
+.help .shapes .squares div.square-2 {
+  width: 45px;
+  height: 45px;
+  background: rgba(36, 123, 160, 0.57);
+  -webkit-transform: rotate(53.48deg);
+          transform: rotate(53.48deg);
+  bottom: 50px;
+  right: 200px;
+}
+
+.help .shapes .squares div.square-3 {
+  width: 40px;
+  height: 40px;
+  background: rgba(110, 220, 42, 0.6);
+  -webkit-transform: rotate(33.53deg);
+          transform: rotate(33.53deg);
+  right: 20px;
+  bottom: 25%;
 }
 
 .help .top .title-grid {
@@ -301,6 +339,16 @@ body {
 
 .help .top .title-grid .image-container svg {
   height: 80%;
+}
+
+.help .top .title-grid .image-container svg #freepik--Character--inject-12 {
+  -webkit-animation: float 2s ease-in-out infinite alternate;
+          animation: float 2s ease-in-out infinite alternate;
+}
+
+.help .top .title-grid .image-container svg #freepik--Sparkles--inject-12 {
+  -webkit-animation: shine 4s ease-in-out infinite alternate;
+          animation: shine 4s ease-in-out infinite alternate;
 }
 
 .help .contents {
@@ -349,5 +397,76 @@ body {
 
 .help .closure svg {
   max-width: 100%;
+}
+
+@media screen and (max-width: 820px) {
+  .help .shapes {
+    display: none;
+  }
+  .help .top .title-grid {
+    display: block;
+  }
+  .help .top .title-grid .image-container {
+    margin-top: 40px;
+  }
+  .help .contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .help .contents .image-container {
+    text-align: center;
+  }
+  .help .contents .image-container svg {
+    height: unset;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .help .top .title-grid h1 {
+    font-size: 1.4em;
+  }
+  .help .top .title-grid .image-container svg {
+    height: unset;
+    width: 90%;
+  }
+  .help .contents p,
+  .help .contents a {
+    font-size: 0.8em;
+  }
+  .help .closure p {
+    font-size: 1em;
+  }
+}
+
+@-webkit-keyframes float {
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes float {
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@-webkit-keyframes shine {
+  to {
+    opacity: 0.3;
+  }
+}
+
+@keyframes shine {
+  to {
+    opacity: 0.3;
+  }
 }
 /*# sourceMappingURL=index.css.map */
