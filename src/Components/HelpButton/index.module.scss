@@ -1,0 +1,17 @@
+.button {
+  all: unset;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 139, 0, 0.73);
+  font-size: 2em;
+  font-weight: 800;
+  color: #fff;
+  cursor: pointer;
+}

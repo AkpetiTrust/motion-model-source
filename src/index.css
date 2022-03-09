@@ -18,6 +18,18 @@ body {
   color: #181818;
 }
 
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .intro {
   min-height: 100vh;
   display: -ms-grid;
@@ -467,6 +479,190 @@ body {
 @keyframes shine {
   to {
     opacity: 0.3;
+  }
+}
+
+.app {
+  padding: 20px;
+}
+
+.app .shapes div {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(110, 220, 42, 0.6);
+  z-index: -2;
+}
+
+.app .shapes .circle-1 {
+  width: 30px;
+  height: 30px;
+  top: calc(60% + 200px);
+  left: 5%;
+}
+
+.app .shapes .circle-2 {
+  width: 50px;
+  height: 50px;
+  bottom: calc(10% - 200px);
+  right: 30px;
+}
+
+.app .label-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 700px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.app .motion {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.app .motion .talk {
+  color: rgba(24, 24, 24, 0.58);
+  max-width: 600px;
+}
+
+.app .motion .chart-area {
+  margin-top: 20px;
+}
+
+.app .motion .form-area {
+  margin-top: 30px;
+}
+
+.app .motion .form-area form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 80px 1fr;
+      grid-template-rows: 80px 1fr;
+}
+
+.app .motion .form-area form .unknown,
+.app .motion .form-area form .value {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.app .motion .form-area form .known {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  border-left: 1px solid #000;
+  padding-left: 30px;
+}
+
+.app .motion .form-area form .known img {
+  position: absolute;
+  top: calc(50% + 200px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  width: 20%;
+}
+
+.app .motion .form-area form .known .heading {
+  color: rgba(24, 24, 24, 0.83);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.app .motion .form-area form .known .note {
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.app .motion .form-area form .known .input-group {
+  margin-bottom: 20px;
+}
+
+.app .motion .form-area form .value .answer {
+  color: #e28413;
+  font-weight: 800;
+}
+
+.app .motion .form-area form input,
+.app .motion .form-area form select {
+  all: unset;
+  display: block;
+  width: 70%;
+  border: 1px solid #1d1128;
+  border-radius: 5px;
+  padding: 0 5px;
+  font-size: 0.8em;
+  margin-top: 10px;
+  font-family: inherit;
+}
+
+.app .motion .form-area form select {
+  padding: 3px 5px;
+}
+
+@media screen and (max-width: 1110px) {
+  .app .motion .form-area form img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .app {
+    padding: 40px;
+  }
+  .app .shapes {
+    display: none;
+  }
+  .app .label-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 5px;
+  }
+  .app .label-group a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .app .motion .form-area form {
+    display: block;
+  }
+  .app .motion .form-area form .value {
+    margin-top: 30px;
+  }
+  .app .motion .form-area form .known {
+    border: none;
+    padding: 0;
+    border-top: 1px solid #000;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  .app .motion .form-area form input,
+  .app .motion .form-area form select {
+    width: 100%;
+    border: 1px solid #1d112881;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .app .label-group {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .app .label-group a {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */

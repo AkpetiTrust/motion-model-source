@@ -21,8 +21,17 @@ body {
   color: $dark-color;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // Intro Page
 @import "./Styles/intro";
 
 // Help Page
 @import "./Styles/help";
+
+// App Page
+@import "./Styles/app";
