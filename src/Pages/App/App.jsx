@@ -3,6 +3,7 @@ import Logo from "../../Components/Logo/Logo";
 import Label from "./Components/Label/Label";
 import { useParams } from "react-router-dom";
 import Motion from "./Components/Motion/Motion";
+import Gravity from "./Components/Gravity/Gravity";
 import Copyright from "../../Components/Copyright/Copyright";
 import HelpButton from "../../Components/HelpButton/HelpButton";
 
@@ -12,6 +13,8 @@ function App() {
   let component;
   if (section === "motion") {
     component = <Motion />;
+  } else if (section === "gravity") {
+    component = <Gravity />;
   }
 
   return (

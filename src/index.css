@@ -519,25 +519,31 @@ body {
   margin-bottom: 30px;
 }
 
-.app .motion {
+.app .motion,
+.app .gravity {
   margin-bottom: 20px;
   position: relative;
 }
 
-.app .motion .talk {
+.app .motion .talk,
+.app .gravity .talk {
   color: rgba(24, 24, 24, 0.58);
   max-width: 600px;
 }
 
-.app .motion .chart-area {
+.app .motion .chart-area,
+.app .gravity .chart-area {
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
-.app .motion .form-area {
+.app .motion .form-area,
+.app .gravity .form-area {
   margin-top: 30px;
 }
 
-.app .motion .form-area form {
+.app .motion .form-area form,
+.app .gravity .form-area form {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -547,13 +553,16 @@ body {
 }
 
 .app .motion .form-area form .unknown,
-.app .motion .form-area form .value {
+.app .motion .form-area form .value,
+.app .gravity .form-area form .unknown,
+.app .gravity .form-area form .value {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
 }
 
-.app .motion .form-area form .known {
+.app .motion .form-area form .known,
+.app .gravity .form-area form .known {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
@@ -564,7 +573,8 @@ body {
   padding-left: 30px;
 }
 
-.app .motion .form-area form .known img {
+.app .motion .form-area form .known img,
+.app .gravity .form-area form .known img {
   position: absolute;
   top: calc(50% + 200px);
   -webkit-transform: translateY(-50%);
@@ -573,28 +583,34 @@ body {
   width: 20%;
 }
 
-.app .motion .form-area form .known .heading {
+.app .motion .form-area form .known .heading,
+.app .gravity .form-area form .known .heading {
   color: rgba(24, 24, 24, 0.83);
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.app .motion .form-area form .known .note {
+.app .motion .form-area form .known .note,
+.app .gravity .form-area form .known .note {
   margin-top: 30px;
   font-weight: 700;
 }
 
-.app .motion .form-area form .known .input-group {
+.app .motion .form-area form .known .input-group,
+.app .gravity .form-area form .known .input-group {
   margin-bottom: 20px;
 }
 
-.app .motion .form-area form .value .answer {
+.app .motion .form-area form .value .answer,
+.app .gravity .form-area form .value .answer {
   color: #e28413;
   font-weight: 800;
 }
 
 .app .motion .form-area form input,
-.app .motion .form-area form select {
+.app .motion .form-area form select,
+.app .gravity .form-area form input,
+.app .gravity .form-area form select {
   all: unset;
   display: block;
   width: 70%;
@@ -606,12 +622,27 @@ body {
   font-family: inherit;
 }
 
-.app .motion .form-area form select {
+.app .motion .form-area form select,
+.app .gravity .form-area form select {
   padding: 3px 5px;
 }
 
+.app .gravity .talk {
+  max-width: 500px;
+}
+
+.app .gravity .form-area form {
+  -ms-grid-rows: 180px 1fr;
+      grid-template-rows: 180px 1fr;
+}
+
+.app .gravity .form-area form select {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1110px) {
-  .app .motion .form-area form img {
+  .app .motion .form-area form img,
+  .app .gravity .form-area form img {
     display: none;
   }
 }
@@ -636,13 +667,16 @@ body {
     width: -moz-fit-content;
     width: fit-content;
   }
-  .app .motion .form-area form {
+  .app .motion .form-area form,
+  .app .gravity .form-area form {
     display: block;
   }
-  .app .motion .form-area form .value {
+  .app .motion .form-area form .value,
+  .app .gravity .form-area form .value {
     margin-top: 30px;
   }
-  .app .motion .form-area form .known {
+  .app .motion .form-area form .known,
+  .app .gravity .form-area form .known {
     border: none;
     padding: 0;
     border-top: 1px solid #000;
@@ -650,7 +684,9 @@ body {
     margin-top: 20px;
   }
   .app .motion .form-area form input,
-  .app .motion .form-area form select {
+  .app .motion .form-area form select,
+  .app .gravity .form-area form input,
+  .app .gravity .form-area form select {
     width: 100%;
     border: 1px solid #1d112881;
   }

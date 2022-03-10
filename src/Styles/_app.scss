@@ -32,7 +32,8 @@
     margin-bottom: 30px;
   }
 
-  .motion {
+  .motion,
+  .gravity {
     margin-bottom: 20px;
     position: relative;
     .talk {
@@ -42,6 +43,7 @@
 
     .chart-area {
       margin-top: 20px;
+      margin-bottom: 50px;
     }
 
     .form-area {
@@ -111,11 +113,27 @@
       }
     }
   }
+
+  .gravity {
+    .talk {
+      max-width: 500px;
+    }
+
+    .form-area {
+      form {
+        grid-template-rows: 180px 1fr;
+        select {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and(max-width:1110px) {
   .app {
-    .motion {
+    .motion,
+    .gravity {
       .form-area form {
         img {
           display: none;
@@ -141,7 +159,8 @@
       }
     }
 
-    .motion {
+    .motion,
+    .gravity {
       .form-area {
         form {
           display: block;
