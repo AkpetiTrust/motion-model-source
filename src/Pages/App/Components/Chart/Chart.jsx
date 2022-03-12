@@ -9,7 +9,7 @@ import {
 } from "chart.js";
 import { Scatter } from "react-chartjs-2";
 
-function Chart({ dataProp }) {
+function Chart({ dataProp, label, dataSetsProp }) {
   ChartJS.register(LinearScale, PointElement, LineElement, Tooltip, Legend);
 
   const options = {
@@ -18,13 +18,15 @@ function Chart({ dataProp }) {
   };
 
   const data = {
-    datasets: [
-      {
-        label: "Velocity vs time",
-        data: dataProp,
-        backgroundColor: "#45F0E1",
-      },
-    ],
+    datasets: dataSetsProp
+      ? dataSetsProp
+      : [
+          {
+            label: label,
+            data: dataProp,
+            backgroundColor: "#45F0E1",
+          },
+        ],
   };
 
   return <Scatter options={options} data={data} height={250} />;

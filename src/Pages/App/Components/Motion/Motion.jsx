@@ -94,7 +94,7 @@ function Motion() {
       </p>
 
       <div className="chart-area">
-        <Chart dataProp={generateData()} />
+        <Chart dataProp={generateData()} label="Velocity vs time" />
       </div>
 
       <div className="center">

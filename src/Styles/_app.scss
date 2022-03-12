@@ -128,6 +128,110 @@
       }
     }
   }
+
+  .projectile {
+    .talk {
+      color: rgba(24, 24, 24, 0.58);
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .chart-area {
+      & + p {
+        text-align: center;
+        font-weight: 700;
+        margin-top: 20px;
+        font-size: 1.1em;
+      }
+    }
+
+    .form-area {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 50px;
+
+      .input-group {
+        margin-bottom: 30px;
+      }
+
+      input {
+        all: unset;
+        display: block;
+        width: 70%;
+        border: 1px solid #1d1128;
+        border-radius: 5px;
+        padding: 0 5px;
+        font-size: 0.8em;
+        margin-top: 10px;
+        font-family: inherit;
+      }
+
+      .info-area {
+        background: rgba(235, 235, 235, 0.35);
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.17);
+        border-radius: 11px;
+        padding: 20px;
+        width: 430px;
+
+        p {
+          margin-bottom: 10px;
+          &.title {
+            color: rgba(0, 0, 0, 0.55);
+            font-weight: 700;
+            text-align: center;
+          }
+        }
+
+        input {
+          width: 70px;
+          display: inline-block;
+          border: unset;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .graph {
+    .graph-name {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.1em;
+      margin-top: 40px;
+    }
+
+    .form-area {
+      margin-top: 30px;
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 20px;
+        white-space: nowrap;
+        input {
+          all: unset;
+          border: 1px solid #000;
+          border-radius: 5px;
+          font-size: 0.8em;
+          padding: 0 5px;
+        }
+      }
+
+      button {
+        all: unset;
+        cursor: pointer;
+        transform: scale(1.1);
+        margin-bottom: 15px;
+      }
+    }
+    .note {
+      span {
+        display: block;
+        margin-top: 30px;
+      }
+    }
+  }
 }
 
 @media screen and(max-width:1110px) {
@@ -143,12 +247,31 @@
   }
 }
 
+@media screen and(max-width:800px) {
+  .app {
+    .projectile {
+      .form-area {
+        grid-template-columns: 1fr;
+        form {
+          margin-bottom: 40px;
+          input {
+            width: 100%;
+          }
+        }
+        .info-area {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 @media screen and(max-width: 700px) {
   .app {
     .shapes {
       display: none;
     }
-    padding: 40px;
+    padding: 40px 20px;
     .label-group {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -183,6 +306,10 @@
           }
         }
       }
+    }
+
+    .projectile .chart-area + p {
+      text-align: left;
     }
   }
 }
